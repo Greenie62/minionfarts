@@ -45,14 +45,15 @@ body{
 }
 
 .farts{
+    margin-top:15%;
     display:flex;
     width:100%;
 }
 
 .farts > div{
     flex:1;
-    height:100px;
-    width:100px;
+    height:140px;
+    width:180px;
 }
 
 .other-player-container{

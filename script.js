@@ -21,6 +21,23 @@ farts.forEach(f=>{
 
 })
 
+var p=""
+
+farts.forEach(f=>{
+    f.addEventListener('mouseenter',(e)=>{
+        p=document.createElement('p')
+        p.appendChild(document.createTextNode('eww'))
+        
+        e.target.prepend(p)
+   })
+})
+
+farts.forEach(f=>{
+    f.addEventListener("mouseleave",(e)=>{
+        e.target.removeChild(p)
+    })
+})
+
 
 var names=['cindy','julie','ruby']
 
@@ -71,7 +88,7 @@ function startGame(){
                 document.getElementById("anchor").innerHTML="CLICK fart first!!"
                 setTimeout(()=>{
                     document.getElementById("anchor").innerHTML=""
-                })
+                },2500)
             }
             else{
             var fart=e.target.firstElementChild.firstElementChild.getAttribute('src');
