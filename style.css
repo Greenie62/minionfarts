@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'Cute Font', cursive;
+    
+}
+
+body{
+    background:linear-gradient(yellow,blue,white)
+}
+
+
+.app{
+    height:100vh;
+    display:flex;
+    width:100%;
+   
+}
+
+.app > div:nth-child(odd){
+    background:lightgray;
+    padding:1em;
+}
+
+.player-container{
+    height:90vh;
+    display:flex;
+    width:30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+
+.game-container{
+    text-align:center;
+    height:90vh;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+
+.farts{
+    display:flex;
+    width:100%;
+}
+
+.farts > div{
+    flex:1;
+    height:100px;
+    width:100px;
+}
+
+.other-player-container{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.other-player-container input{
+    width:80%;
+}
+
+
+.startbutton{
+    padding:8px;
+    background:green;
+    color:white;
+    text-align:center;
+    font-size:28px;
+    height:50px;
+    width:80px;
+    border-radius:25%;
+    cursor: pointer;
+    transition:1s
+}
+
+button:hover{
+     color:green;
+    background:white;
+}
+
+.fart{
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    position:relative;
+
+}
+
+@keyframes jump{
+    0%{bottom:0%;left:30%}
+    50%{bottom:50%;left:60%}
+    100%{bottom:0%;left:90%}
+}
