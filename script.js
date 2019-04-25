@@ -22,21 +22,10 @@ farts.forEach(f=>{
 })
 
 var p=""
+var eww=document.querySelectorAll(".eww")
 
-farts.forEach(f=>{
-    f.addEventListener('mouseenter',(e)=>{
-        p=document.createElement('p')
-        p.appendChild(document.createTextNode('eww'))
-        
-        e.target.prepend(p)
-   })
-})
 
-farts.forEach(f=>{
-    f.addEventListener("mouseleave",(e)=>{
-        e.target.removeChild(p)
-    })
-})
+
 
 
 var names=['cindy','julie','ruby']
@@ -162,7 +151,7 @@ function endGame(){
         document.getElementById("timer").innerHTML="Cindy is the most cochina!!"
     }
 
-    if(rubyfarts > cindyfarts && rubyfarts > juliefarts){
+    if(juliefarts > cindyfarts && juliefarts > rubyfarts){
         console.log("Julie is the most cochina!!")
         document.getElementById("timer").innerHTML="Julie is the most cochina!!"
     }
